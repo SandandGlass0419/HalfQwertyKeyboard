@@ -1,0 +1,15 @@
+﻿<Window x:Class="HalfQwertyKeyBoard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HalfQwertyKeyBoard"
+        mc:Ignorable="d"
+        Title="HalfQwerty_KeyBoard v1.1" Height="300" Width="300">
+    <Grid>
+        <TextBlock Text="HalfQwerty_KeyBoard v1.1" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,150"/>
+        <Button x:Name="btn_trgr" Width="150" Height="50" Content="{Binding HStateData, UpdateSourceTrigger=PropertyChanged}" FontSize="20"
+                Click="btn_trgr_Click"/>
+        <TextBlock x:Name="tb_state" Text="{Binding StateData, UpdateSourceTrigger=PropertyChanged}" FontSize="10" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0"/>
+    </Grid>
+</Window>
